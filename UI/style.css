@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body::before {
+    /* REQUIRED: Creates the virtual box */
+    content: ""; 
+    
+    /* Position and Size: Makes the box cover the entire screen */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Stacking: Puts the background layer *behind* the actual content */
+    z-index: -1; 
+    
+    /* 🖼️ IMAGE PROPERTIES: Apply the image, size, and centering here */
+   background-image: linear-gradient(rgba(0,0,0,0.7)), url(bg.avif); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    opacity: 0.9; 
+}
+#span2{
+    margin-right:150px;
+}
+#dd{
+    color: white;
+    font-size: 30px;
+    height: 130px;
+    width:100%;
+    background-color: black;
+    text-align: center;
+}
+#head{
+    padding-bottom: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white(110, 63, 30);
+    font-size: 70px;
+    margin-left: 150px;
+    font-weight: 900;
+
+}
+#pre{
+    margin-top: 150px;
+}
+#a1{
+    text-align: center;
+    color: white;
+    font-size: 90px;
+}
+#p1
+{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+#but1{
+     text-decoration: none;
+    margin-left: 250px;
+    width:400px;
+    height:70px;
+    background-color: rgb(185, 125, 29);
+    border-radius: 10px;
+    font-size:10px;
+   
+}
+#but2{
+    width:400px;
+    height:70px;
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+#pre1{
+    text-align: center;
+}
+.d2 {
+    height: 430px;
+    width: 500px;
+    margin-left: 150px;
+    text-align: center;
+    background-color: burlywood;
+    margin:20px;
+    margin-top: 10px;
+}
+
+.d2 img {
+    width: 100%;
+    display: block; /* Removes any tiny space below the image */
+    border-radius: 20px 20px 0 0;
+}
+#he2{
+    text-align: center;
+    
+}
+body{
+background-color: black;
+}
+#headiv::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.places{
+    color:white;
+    font-size:20px;
+
+}
+.card-container {
+    display: flex; 
+    margin-top: 20px 10px;
+    justify-content:center; 
+    flex-wrap: wrap;
+    position: relative;
+}
+#but3{
+    margin-top: 20px;
+    margin-left: 550px;
+    text-align: centre;
+    width:400px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 30px;
+    border-radius: 20px;
+    background-color: burlywood;
+}
+#drop1{
+    margin-top: 0px;
+    margin-left: 250px;
+    width: 200px;
+    height: 30px;
+    background-color: beige;
+    text-align: center;
+    font-size:15px;
+    padding: auto;
+}
+#globe{
+    height: 30px;
+    width: 30px;
+    
+} 
+.d2 .text{
+ position:absolute;
+ right: 5px;
+ top: 5px;
+}
+#ai1{
+    text-align: center;
+    color:white;
+    font-size: 60px;
+}
+#ai2{
+    text-align: center;
+    color:white;
+    font-size: 30px;
+}
+.box1{
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 5px;
+    font-size: 30px;
+    color:white;
+}
+.box2{
+     text-align: center;
+    margin-left: 5px;
+    font-size: 20px;
+    color:white;
+}
+.di0{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:20px;
+    box-sizing: border-box;
+}
+.di1{
+    border-radius: 30px;;
+  margin: 0 10px;
+    height:600px;
+    width:30%px;
+    background-color: grey;
+    opacity: 0.7;
+    display:flex ;
+    flex-direction: column;
+}
+.choose{
+    color:white;
+    font-size: 25px;
+    margin-left: 20px;
+    
+}
+.b1{
+    font-size:20px;
+    text-align: white;
+    margin-left: 20px;
+    height: 30px;
+    width:300px;
+    background-color: black;
+    color:white;
+}
+#sub1{
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    color: black;
+    background-color:  rgb(185, 125, 29);
+}

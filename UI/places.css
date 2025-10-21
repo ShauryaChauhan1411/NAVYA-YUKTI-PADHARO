@@ -1,0 +1,30 @@
+
+.card-container {
+    display: flex; 
+    margin-top: 20px 10px;
+    justify-content:center; 
+    flex-wrap: wrap;
+}
+.d2 {
+    height: 430px;
+    width: 500px;
+    border-radius: 20px;
+    margin-left: 150px;
+    text-align: center;
+    background-color: burlywood;
+    margin:20px;
+    margin-top: 10px;
+}
+.d2 img {
+    width: 100%;
+    display: block; /* Removes any tiny space below the image */
+    border-radius: 20px 20px 0 0;
+}
+body{
+    background-color: black;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
