@@ -1,0 +1,217 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000; 
+    color: #fff;
+    overflow-x: hidden;
+}
+
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    padding: 60px 80px;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url("rajasthan-bg.jpg") no-repeat center center;
+    background-size: contain;
+    background-color: black; 
+}
+
+section h1 {
+
+    font-size: 2.8em;
+    text-align: center;
+    color: #f5d76e; 
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(245, 215, 110, 0.4);
+    font-family:cursive;
+}
+section h1:hover{
+    color:#ffd700;
+    text-decoration: gold underline;
+}
+
+
+.option, .translation {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid gold;
+    border-radius: 15px;
+    padding: 25px 30px;
+    margin-bottom: 40px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    height: 50vh;
+}
+
+.option:hover, .translation:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+.option h2, .translation h2 {
+    font-size: 1.8em;
+    color: #f5d76e;
+    margin-bottom: 15px;
+}
+
+
+.drop-down ul {
+    list-style: none;
+}
+
+.drop-down ul li {
+    position: relative;
+    margin: 10px 0;
+}
+
+.drop-down ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.drop-down ul li a:hover {
+    background: rgba(245, 215, 110, 0.2);
+    color: #f5d76e;
+    border-color: #f5d76e;
+}
+
+
+input {
+    width: 220px;
+    height: 40px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 6px;
+    background: white;
+    color: black;
+    font-size: 1em;
+    padding: 0 10px;
+    outline: none;
+}
+
+label {
+    margin-left: 10px;
+    font-size: 0.9em;
+    color: rgba(255,255,255,0.7);
+}
+
+
+.menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 110%;
+    background: rgba(0,0,0,0.85);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 10px;
+    padding: 10px 0;
+    z-index: 10;
+    min-width: 180px;
+    max-height: 180px;
+    overflow-y: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0,0.1);
+    animation: fadein 0.3s ease;
+}
+.menu::-webkit-scrollbar {
+  width: 6px;
+}
+.menu::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 10px;
+}
+.menu::-webkit-scrollbar-thumb:hover {
+  background: #b89b2f;
+}
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 8px 15px;
+    color: #fff;
+    font-size: 0.95em;
+    transition: all 0.3s;
+}
+
+.menu ul li a:hover {
+    background: rgba(245, 215, 110, 0.2);
+    color: #f5d76e;
+}
+
+
+.drop-down ul li:hover .menu {
+    display: block;
+}
+
+
+button {
+    background: #f5d76e;
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ffd700;
+    transform: scale(1.05);
+}
+
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin: 40px 0;
+}
+
+
+.translation p {
+    font-size: 1em;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    section {
+        padding: 40px 25px;
+        background-size: cover;
+    }
+
+    section h1 {
+        font-size: 2em;
+    }
+
+    .option, .translation {
+        padding: 20px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .drop-down ul li a {
+        font-size: 0.95em;
+        padding: 6px 12px;
+    }
+}
