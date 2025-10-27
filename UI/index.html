@@ -3,134 +3,217 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Padharo - Discover Rajasthan</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div id="dd">
-      <img src="logo.png" height="100px"width="250px" id="logo1">
-          <span id="head">Padharo</span>
-            <select name="language" id="drop1">
-            <option value="ENGLISH">ENGLISH</option>
-            <option value="HINDI">HINDI</option>
-            <option value="FRENCH">FRENCH</option>
-            <option value="SPANISH">SPANISH</option>
-          </select>
-      </div>
-   </header>
+      <img src="logo.png" height="125px" width="300px" id="logo1" alt="Padharo Logo">
+      <span id="head">Padharo</span>
+      <select name="language" id="drop1">
+        <option value="ENGLISH">ENGLISH</option>
+        <option value="HINDI">HINDI</option>
+        <option value="FRENCH">FRENCH</option>
+        <option value="SPANISH">SPANISH</option>
+      </select>
+    </div>
+  </header>
 
-
+  <main>
     <h1 id="a1">Discover Rajasthan with AI Intelligence</h1>
-    <p id="p1">Your smart companion for exploring India's royal heritage. Get<br> personalized itineraries, instant translations, and AI-powered insights<br>for an unforgettable journey.</p>
-      <PRE id="PRE"><br><br>
-        <button id="but1"><a href="plan_your_journey.html"><h1>PLAN YOUR JOURNEY</h1></a></button>   <button id="but2"><a href="places\explore_destination.html"><h1> Explore Destination.</h1></a></button>
-       
-      </PRE>
-    <div class="card-container"> 
-      <div class="d2">
-         <a href="places/hawa_mahal.html"><img src="hawa_mahal.webp"height="300px"width="400px"></a>
-         <div class="text">Heritage</div>
-         
-         <h3 class="place">HAWA MAHAL</h3>
-      </div>
-      <div class="d2">
-         <a href="places/chittor.html"><img src="Chittorgarh_fort.jpg"height="300px"width="400px"></a>
-         
-             
-  
-         
-         <h3 class="place">CHITTORGARH FORT</h3>
-     
-                  
-      </div>
-      <div class="card-container">
-                    <div class="d2">
-         <a href="places/bhangarh.html"><img src="bhangarh.jpg"height="300px"width="400px"></a>
-         <h3 class="place">BHANGARH FORT</h3>
-      </div>
-      <div class="d2">
-         <a href="places/mehrangarh.html"><img src="Mehrangarh.jpg"height="300px"width="400px"></a>
-         <h3 class="place">MEHRANGARH FORT</h3>
-      </div>
-      </div>
+    <p id="p1">Your smart companion for exploring India's royal heritage. Get personalized itineraries, instant translations, and AI-powered insights for an unforgettable journey.</p>
+    
+    <div class="button-container">
+      <a href="plan_your_journey.html" class="main-button primary">PLAN YOUR JOURNEY</a>
+      <a href="places/explore_destination.html" class="main-button secondary">EXPLORE DESTINATIONS</a>
+    </div>
 
-       <div class="card-container">
-       <div class="d2">
-         <a href="places/kumbalgarh.html"><img src="KKumbalgarh.jpg"height="300px"width="400px"></a>
-         <h3 class="place">KUMBALGARH FORT</h3>
-      </div>
-            <div class="d2">
-         <a href="places/jaisalmer.html"><img src="jaisalmer.jpg"height="300px"width="400px"></a>
-         <h3 class="place">JAISALMER FORT</h3>
-      </div>
-          
-      </div>
-      </div>
-
-      <a href="places.html"><Button id="but3">MORE PLACES</Button></a><br>
-  <hr><br>
-      <H1 id="ai1"> AI-Powered Features</H1>
-      <p id="ai2"> Experience intelligent tourism with our suite of AI tools designed<br> for modern travelers</p>
-      <br>
-      <DIV class="di0">
-      <div class="di1" ><br>
+    <!-- Featured Places -->
+    <section class="featured-section">
+      <h2 class="section-title">Featured Heritage Sites</h2>
+      <div class="card-container"> 
+        <div class="d2">
+          <a href="places/hawa_mahal.html">
+            <img src="hawa_mahal.webp" alt="Hawa Mahal">
+            <div class="text-badge">Heritage</div>
+          </a>
+          <h3 class="place">HAWA MAHAL</h3>
+        </div>
         
-        <h1 class="box1">Smart Itinerary Planner</h1>
-        <h2 class="box2">AI-powered travel<br>recommendation</h2>
-        <br>
-        <p class="choose">Travel Season</p>
-        <select name="season" class="b1">
-          <option value="Summer">Summer</option> 
-          <option value="Monsoon">Monsoon</option> 
-          <option value="Winter">Winter</option> 
-        </select>
-        <p class="choose">Budget</p>
-        <select name="season" class="b1">
-          <option value="below 10000">below 10000</option> 
-          <option value="below 25000">below 25000</option> 
-          <option value="below 50000">below 50000</option> 
-           <option value="below 100000">below 100000</option> 
-            <option value="below 200000">below 200000</option> 
-        </select>
-        <p class="choose">Interest</p>
-        <select name="season" class="b1">
-          <option value="Heritage">Heritage</option> 
-          <option value="Temple">Temple</option> 
-          <option value="Mountain">Mountain</option> 
-        </select>
-        <input type="submit" value="submit" id="sub1">
+        <div class="d2">
+          <a href="places/chittor.html">
+            <img src="Chittorgarh_fort.jpg" alt="Chittorgarh Fort">
+            <div class="text-badge">Heritage</div>
+          </a>
+          <h3 class="place">CHITTORGARH FORT</h3>
+        </div>
+        
+        <div class="d2">
+          <a href="places/bhangarh.html">
+            <img src="bhangarh.jpg" alt="Bhangarh Fort">
+            <div class="text-badge">Heritage</div>
+          </a>
+          <h3 class="place">BHANGARH FORT</h3>
+        </div>
+        
+
+
+      <div class="card-container">
+         <div class="d2">
+          <a href="places/mehrangarh.html">
+            <img src="Mehrangarh.jpg" alt="Mehrangarh Fort">
+            <div class="text-badge">Heritage</div>
+          </a>
+          <h3 class="place">MEHRANGARH FORT</h3>
+        </div>
+      </div>
+        <div class="d2">
+          <a href="places/kumbalgarh.html">
+            <img src="KKumbalgarh.jpg" alt="Kumbalgarh Fort">
+            <div class="text-badge">Heritage</div>
+          </a>
+          <h3 class="place">KUMBALGARH FORT</h3>
+        </div>
+        
+        <div class="d2">
+          <a href="places/jaisalmer.html">
+            <img src="jaisalmer.jpg" alt="Jaisalmer Fort">
+            <div class="text-badge">Heritage</div>
+          </a>
+          <h3 class="place">JAISALMER FORT</h3>
+        </div>
       </div>
 
-      <div class="di1"><br>
-        <h1 class="box1">Speak Like A Local</h1>
-        <h2 class="box2">Instant Hindi & Rajasthani phrases</h2>
-        <br>
-        <p class="choose">English phrases</p>
-       <input type ="text" placeholder ="e.g.- Hello,Thank You, Welcome" class="b1">
-       <br>
-        <p class="choose">Target Lanuage</p>
-         <select name="language" class="b1">
-          <option value="Hindi">HINDI</option>
-           <option value="Rajasthani">Rajasthani</option>
-           <option value="French">French</option>
-           <option value="Spanish">Spanish</option>
-          <input type="submit" value="submit" id="sub1">
+      <a href="places.html" class="view-more-btn">MORE PLACES</a>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- AI Features Section -->
+    <section class="ai-section">
+      <h1 id="ai1">AI-Powered Features</h1>
+      <p id="ai2">Experience intelligent tourism with our suite of AI tools designed for modern travelers</p>
+      
+      <div class="di0">
+        <div class="di1">
+          <h2 class="box1">Smart Itinerary Planner</h2>
+          <p class="box2">AI-powered travel recommendations</p>
+          
+          <label class="choose">Number of Days</label>
+          <input type="text" placeholder="No. of days" class="b1">
+          
+          
+          <label class="choose">Budget</label>
+          <select name="budget" class="b1">
+            <option value="below 10000">Below ₹10,000</option> 
+            <option value="below 25000">Below ₹25,000</option> 
+            <option value="below 50000">Below ₹50,000</option> 
+            <option value="below 100000">Below ₹1,00,000</option> 
+            <option value="below 200000">Below ₹2,00,000</option> 
+          </select>
+          
+          <label class="choose">Interest</label>
+          <select name="interest" class="b1">
+            <option value="Heritage">Heritage</option> 
+            <option value="Temple">Temple</option> 
+            <option value="Mountain">Mountain</option> 
+          </select>
+          
+          <button type="submit" class="sub1">Generate Plan</button>
+        </div>
+
+        <div class="di1">
+          <h2 class="box1">Speak Like A Local</h2>
+          <p class="box2">Instant Hindi & Rajasthani phrases</p>
+          
+          <label class="choose">English Phrase</label>
+          <input type="text" placeholder="e.g. Hello, Thank You, Welcome" class="b1">
+          
+          <label class="choose">Target Language</label>
+          <select name="language" class="b1">
+            <option value="Hindi">Hindi</option>
+            <option value="Rajasthani">Rajasthani</option>
+            <option value="French">French</option>
+            <option value="Spanish">Spanish</option>
+          </select>
+          
+          <button type="submit" class="sub1">Translate</button>
+        </div>
+
+        <div class="di1">
+          <h2 class="box1">AI-Powered Insights</h2>
+          <p class="box2">Discover trending destinations</p>
+          
+          <p class="choose">Get AI-generated satisfaction analysis across popular Rajasthan destinations. Our intelligent system analyzes visitor feedback to show you the best experiences.</p>
+          
+          <button type="submit" class="sub1">View Insights</button>
+        </div>
       </div>
+    </section>
 
-      <div class="di1"><br>
-        <h1 class="box1">AI-Powered Insights</h1>
-        <h2 class="box2">Discover trending destinations</h2>
-        <br>
-        <p class="choose">Get AI-generated satisfaction analysis <br>across popular Rajasthan <br>destinations. Our intelligent system<br> analyzes visitor feedback to show<br> you the best experiences.
+    <hr class="section-divider">
 
-</p>
-       
-          <input type="submit" value="submit" id="sub1">
+    <!-- History Section -->
+    <section class="history-section">
+      <a href="history_Forts/index.html">
+        <img src="https://www.poojn.in/wp-content/uploads/2025/04/Rajasthans-Historical-Sites-Culture-A-Guide-to-the-Rajputana-Legacy.jpeg.jpg" alt="Rajasthan's Historical Sites" class="history-img">
+      </a>
+      <a href="history_Forts/index.html" id="history">
+        <h2>DIVING INTO THE EVERGREEN HISTORY OF RAJASTHAN'S MAGNIFICENT FORTS</h2>
+      </a>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Must Do Activities -->
+    <section class="activities-section">
+      <h2 id="activities">✦ MUST DO ACTIVITIES IN RAJASTHAN ✦</h2>
+      
+      <div class="activities-grid">
+        <div class="activity-item">
+          <a href="MUST_DO/shows.html">
+            <img src="MUST_DO/shows.jpg" alt="Shows">
+          </a>
+          <h3>Shows</h3>
+        </div>
+        
+        <div class="activity-item">
+          <a href="MUST_DO/customs.html">
+            <img src="MUST_DO/custom.jpg" alt="Customs">
+          </a>
+          <h3>Customs</h3>
+        </div>
+        
+        <div class="activity-item">
+          <a href="MUST_DO/handicrafts.html">
+            <img src="MUST_DO/handicraft.jpg" alt="Handicrafts">
+          </a>
+          <h3>Handicrafts</h3>
+        </div>
+        
+        <div class="activity-item">
+          <a href="MUST_DO/food.html">
+            <img src="MUST_DO/food.jpg" alt="Food">
+          </a>
+          <h3>Food</h3>
+        </div>
+        
+        <div class="activity-item">
+          <a href="MUST_DO/music.html">
+            <img src="MUST_DO/music.jpg" alt="Music">
+          </a>
+          <h3>Music</h3>
+        </div>
+        
+        <div class="activity-item">
+          <a href="MUST_DO/lifestyle.html">
+            <img src="MUST_DO/lifestyle.jpg" alt="Lifestyle">
+          </a>
+          <h3>Lifestyle</h3>
+        </div>
       </div>
-      </DIV>
-
-      <h1></h1>
-
+    </section>
+  </main>
 </body>
 </html>
